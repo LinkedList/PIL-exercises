@@ -1,0 +1,9 @@
+--[[
+-- Chapter 1, Exercise 3
+--
+-- Can you name other languages that use -- for comments?
+--
+-- Solution:
+-- Euphoria, Haskell, SQL, Ada, AppleScript, Eiffel, VHDL, SGML
+-- taken from http://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Comments
+--]]
