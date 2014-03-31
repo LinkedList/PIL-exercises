@@ -1,0 +1,13 @@
+--[[
+--  Chapter 2, Exercise 3
+--
+--  The number 12.7 is equal to the fraction 127/10, where the denominator is a power of ten.
+--  Can you express it as a common fraction where the denominator is a power of two? What about
+--  the number 5.5?
+--
+--  Solution:
+--  12.7 can't be represented in a binary system, therefore can't be expressed as a fraction with
+--  a denominator that is a power of two. (See page 11 in the book)
+--
+--  5.5 can be represented as 11/2 e.g.
+-]]
