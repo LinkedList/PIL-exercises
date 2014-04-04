@@ -7,7 +7,7 @@
 --	value for x and returns the polynomial value.
 --
 --  Solution:
--]]
+--]]
 
 --[[
 --	coefficients is a table, that starts with a_0 and goes to a_n

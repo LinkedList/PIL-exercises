@@ -5,7 +5,7 @@
 --	and n multiplications (and no exponentiations)?
 --
 --  Solution:
--]]
+--]]
 
 --[[
 --	coefficients is a table, that starts with a_0 and goes to a_n
