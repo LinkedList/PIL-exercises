@@ -1,0 +1,12 @@
+--[[
+--  Chapter 3, Exercise 6
+--
+--	Consider the following expression:
+--	(x and y and (not z)) or ((not y) and x)
+--	Are the parentheses necessary? Would you recommend their use in that expression?
+--
+--  Solution:
+--  Parentheses in this expression are not necessary, as "not" has precedence over "and", and "and" has precedence over "or".
+--  However usage of parentheses is advised, as it promotes readability.
+-]]
+
