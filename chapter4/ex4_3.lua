@@ -1,0 +1,11 @@
+--[[
+--  Chapter 4, Exercise 3
+--
+--	Many people argue that repeat-until is seldom used, and therefore it
+--	should not be present in a minimalistic language like Lua. What do you
+--	think?
+--
+--  Solution:
+--  Repeat-until loop is usable when you want code to be run at least once. And once that
+--  happens, it is much clearer than while loop, so I say why not.
+--]]
