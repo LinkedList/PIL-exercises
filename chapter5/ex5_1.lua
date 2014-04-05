@@ -9,7 +9,7 @@
 
 function concatenatedStrings(...)
 	local result = ""
-	for str in pairs{...} do
+	for i, str in pairs{...} do
 		result = result .. str
 	end
 	return result
