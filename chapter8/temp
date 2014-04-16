@@ -1,0 +1,2 @@
+local y = 15;
+print("Hello there!");
