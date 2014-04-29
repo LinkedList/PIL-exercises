@@ -1,0 +1,10 @@
+--[[
+--  Chapter 8, Exercise 4
+--
+--	Can you find any value for f such that the call pcall(pcall, f)
+--	returns false as its first result?
+--
+--  Solution:
+--	As per the manual: pcall catches the error and returns a status code.
+--	So if the first pcall catches the error, then the second one cannot return false.
+--]]
