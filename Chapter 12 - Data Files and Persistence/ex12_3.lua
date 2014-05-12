@@ -1,8 +1,9 @@
 --[[
---  Chapter 12, Exercise 2
+--  Chapter 12, Exercise 1
 --
---  Modify the code in Listing 12.2 so that it uses the syntax ["key"]=value, as suggested in
---  Section 12.2
+--  Modify the code of the previous exercise so that is uses the syntax
+--  ["key"]=value only when necessary (that is, when the key is a string but
+--  not a valid identifier).
 --
 --  Solution:
 --]]
@@ -19,7 +20,11 @@ function serialize(o, tab)
             for i=1, tab do
                 io.write("\t")
             end
-            io.write(" ["); serialize(k); io.write("] = ")
+            if string.match(k, "^[%a_][%d%a_]*$") then
+                io.write(" ", k, " = ")
+            else
+                io.write(" ["); serialize(k); io.write("] = ")
+            end
             serialize(v, tab + 1)
             io.write(", \n")
         end
