@@ -8,7 +8,7 @@
 --
 --  Solution:
 --]]
-local pprint = require("pprint")
+
 function getfield(f)
     local v = _G
 
