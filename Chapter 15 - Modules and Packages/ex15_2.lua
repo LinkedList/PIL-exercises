@@ -1,0 +1,18 @@
+--[=[
+--  Chapter 15, Exercise 2
+--
+--  What happens in the search for a library if the path has some fixed component
+--  (that is, a component without a question mark)? Can this behavior be useful?
+--
+--  Solution:
+--  As stated in:
+--
+--      http://www.lua.org/manual/5.2/manual.html#pdf-package.searchpath
+--
+--  package.searchpath(name, path [, sep [, rep]])
+--  Returns the resulting name of the first file that it can open in read mode(after closing the file),
+--  or nil plus an error message if none succeeds.
+--
+--  So if no file in the search path with question marks is found and the last path is fixed, that file
+--  will be loaded. Could be useful for a fallback.
+--]=]
