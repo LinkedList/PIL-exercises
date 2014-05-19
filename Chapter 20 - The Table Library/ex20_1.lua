@@ -5,7 +5,7 @@
 --
 --  Solution:
 --]]
-local pprint = require("pprint")
+
 function rconcat(list, sep)
     if type(list) ~= "table" then return list end
     local res = {}
