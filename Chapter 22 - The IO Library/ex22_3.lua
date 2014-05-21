@@ -156,8 +156,8 @@ function wholeFile()
     inp:close()
     out:close()
 
-    -- local out = io.open(output_file, "w")
-    -- out:close()
+    local out = io.open(output_file, "w")
+    out:close()
 end
 
 local start_time = os.clock()
