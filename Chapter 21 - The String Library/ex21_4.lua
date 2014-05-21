@@ -20,4 +20,4 @@ function reverseutf8(str)
     return table.concat(return_arr)
 end
 
-print(reverseutf8("Hei siellä"))
+print(reverseutf8("력사 역사"))
