@@ -32,7 +32,7 @@ function getvarvalue(name, level)
 
     for i=1,math.huge do
         local n, v = debug.getupvalue(func, i)
-        print(n) --> if i == 1 then n == "_ENV"
+        -- print(n) --> if i == 1 then n == "_ENV"
         if not n then break end
         if n == name then return v end
     end
@@ -40,5 +40,3 @@ function getvarvalue(name, level)
     local env = getvarvalue("_ENV", level)
     return env[name]
 end
-
-print(getvarvalue("a"))

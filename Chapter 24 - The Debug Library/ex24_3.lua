@@ -6,35 +6,8 @@
 --  Solution:
 --]]
 
-function getvarvalue(name, level)
-    local value
-    local found = false
-
-    level = (level or 1) + 1
-
-    for i=1,math.huge do
-        local n, v = debug.getlocal(level, i)
-        if not n then break end
-
-        if n == name then
-            value = v
-            found = true
-        end
-    end
-
-    if found then return value end
-
-    local func = debug.getinfo(level, "f").func
-
-    for i=1,math.huge do
-        local n, v = debug.getupvalue(func, i)
-        if not n then break end
-        if n == name then return v end
-    end
-
-    local env = getvarvalue("_ENV", level)
-    return env[name]
-end
+-- getvarvalue from Listing 24.1
+require("./ex24_1")
 
 function setvarvalue(name, value, level)
     local found = false
