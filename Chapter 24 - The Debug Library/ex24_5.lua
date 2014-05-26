@@ -8,25 +8,25 @@
 --  Solution:
 --]]
 
+-- Listing 24.1 getvarvalue
 require("./ex24_1")
-
 
 function debugimp()
     mt = {
         __index = function (t, k)
-            return getvarvalue(k)
+            return getvarvalue(k, 3)
         end
     }
-    local setmetatable = setmetatable
     while true do
         io.write("lua_debug>")
         local line = io.read()
         if line == "cont" then
             return
         else
+            env = {}
+            setmetatable(env, mt)
             local f = assert(load(line))
-            local _ENV = {}
-            setmetatable(_ENV, mt)
+            debug.setupvalue(f, 1, env)
             f()
         end
     end
@@ -34,7 +34,6 @@ end
 
 function test()
     local a = "test this"
-    print(getvarvalue("a"))
     debugimp()
 end
 
