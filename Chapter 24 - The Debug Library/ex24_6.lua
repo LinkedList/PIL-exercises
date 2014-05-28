@@ -1,3 +1,4 @@
+--[[
 --  Chapter 24, Exercise 6
 --
 --  Improve the previous exercise to handle updates, too.

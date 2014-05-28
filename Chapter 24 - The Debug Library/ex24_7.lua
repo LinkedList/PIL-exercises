@@ -1,3 +1,4 @@
+--[[
 --  Chapter 24, Exercise 7
 --
 --  Implement some of the suggested improvements for the basic profiler in Section 24.3.

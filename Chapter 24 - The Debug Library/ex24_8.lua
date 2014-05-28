@@ -1,3 +1,4 @@
+--[[
 --  Chapter 24, Exercise 7
 --
 --  Write a library for breakpoints. It should offer at least two functions:
